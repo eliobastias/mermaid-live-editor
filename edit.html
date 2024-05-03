@@ -1,64 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor</title>
-		<meta
-			name="og:image"
-			content="https://github.com/mermaid-js/mermaid/raw/develop/img/header.png" />
-		<link rel="canonical" href="https://mermaid.live" />
-		<meta
-			name="description"
-			content="Simplify documentation and avoid heavy tools. Open source Visio Alternative. Commonly used for explaining your code! Mermaid is a simple markdown-like script language for generating charts from text via javascript." />
-		<link rel="icon" type="image/png" href="/mermaid-live-editor/favicon.png" />
-		<link rel="manifest" href="/mermaid-live-editor/manifest.json" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/editor/editor.main.min.css"
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer" />
-		<script>
-			var require = {
-				paths: { vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs' }
-			};
-		</script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/loader.min.js"
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/editor/editor.main.nls.min.js"
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/editor/editor.main.js"
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor</title>
+    <meta
+      name="og:image"
+      content="https://github.com/mermaid-js/mermaid/raw/develop/img/header.png" />
+    <link rel="canonical" href="https://mermaid.live" />
+    <meta
+      name="description"
+      content="Simplify documentation and avoid heavy tools. Open source Visio Alternative. Commonly used for explaining your code! Mermaid is a simple markdown-like script language for generating charts from text via javascript." />
+    <link rel="icon" type="image/png" href="./favicon.svg" />
+    <link rel="mask-icon" href="./favicon.svg" color="#000000" />
+    <meta name="theme-color" content="#6366F1" />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    
+		<link rel="modulepreload" href="./_app/immutable/entry/start.DVeqOOFX.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Cr45kRRy.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BqyaJR38.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.Cwh0thPY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.CYOl5Ipu.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CNc3XF10.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.D6kgxu3v.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.C6F9WoFv.js">
+  </head>
+  <body style="overflow: hidden">
+    <div id="svelte">
+			<script>
+				{
+					__sveltekit_1gp6np3 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/mermaid-live-editor"
+					};
 
-		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/mermaid-live-editor/_app/start-7b9069b2.js">
-	<link rel="modulepreload" href="/mermaid-live-editor/_app/chunks/index-3ccfa173.js">
-	<link rel="modulepreload" href="/mermaid-live-editor/_app/chunks/preload-helper-e8f5b6ac.js">
-	<link rel="modulepreload" href="/mermaid-live-editor/_app/chunks/paths-396f020f.js">
-	<link rel="modulepreload" href="/mermaid-live-editor/_app/chunks/singletons-d1fb5791.js">
-	</head>
-	<body>
-		<div id="svelte">
-		<script type="module" data-hydrate="45h">
-		import { start } from "/mermaid-live-editor/_app/start-7b9069b2.js";
-		start({
-			target: document.querySelector('[data-hydrate="45h"]').parentNode,
-			paths: {"base":"/mermaid-live-editor","assets":"/mermaid-live-editor"},
-			session: {},
-			route: true,
-			spa: true,
-			trailing_slash: "ignore",
-			hydrate: null
-		});
-	</script></div>
-	</body>
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DVeqOOFX.js"),
+						import("./_app/immutable/entry/app.CNc3XF10.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
 </html>
